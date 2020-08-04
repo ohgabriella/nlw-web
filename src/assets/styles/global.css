@@ -26,3 +26,32 @@
       padding: 0;
       box-sizing: border-box;
   }
+
+  html, body, #root {
+      height: 100vh; /*vai sempre ocupar 100% da tela*/
+  }
+
+  body {
+      background-color: var( --color-background);
+  }
+
+  #root {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+body, input, button, textarea {
+    font: 500 1.6rem Poppins; /*60% a mais do meu font-size*/
+}
+
+.container {
+  width: 90vw;
+  max-width: 700px;
+}
+
+@media(min-width: 700px) {
+    :root{
+        font-size: 62.5%;
+    }
+}
